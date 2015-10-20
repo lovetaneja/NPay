@@ -1,0 +1,99 @@
+{"level":"debug","message":"Starting reloading of rules for getWorkflowName","timestamp":"2015-10-20T20:49:47.708Z"}
+{"level":"info","message":"Deleted flow having name = wfNameFlow0","timestamp":"2015-10-20T20:49:47.935Z"}
+{"level":"info","message":"Reloaded Rules with flow name = wfNameFlow1","timestamp":"2015-10-20T20:49:48.000Z"}
+{"level":"debug","message":"Rules reloaded successfully for getWorkflowName","timestamp":"2015-10-20T20:49:48.000Z"}
+{"level":"debug","message":"Starting reloading of rules for getNextServiceName","timestamp":"2015-10-20T20:50:14.630Z"}
+{"level":"info","message":"Deleted flow having name = nextServiceFlow0","timestamp":"2015-10-20T20:50:14.728Z"}
+{"level":"info","message":"Reloaded Rules with flow name = nextServiceFlow1","timestamp":"2015-10-20T20:50:14.809Z"}
+{"level":"debug","message":"Rules reloaded successfully for getNextServiceName","timestamp":"2015-10-20T20:50:14.809Z"}
+{"level":"info","message":"Workflow Name for TAX API is taxWF.","timestamp":"2015-10-20T20:50:58.203Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = firstService lastServiceStatus = success","timestamp":"2015-10-20T20:50:58.206Z"}
+{"level":"info","message":"Next Service Name is = service1","timestamp":"2015-10-20T20:50:58.219Z"}
+{"level":"debug","message":"Executing Service 1","timestamp":"2015-10-20T20:50:58.221Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service1 lastServiceStatus = success","timestamp":"2015-10-20T20:50:58.221Z"}
+{"level":"info","message":"Next Service Name is = service2","timestamp":"2015-10-20T20:50:58.227Z"}
+{"level":"debug","message":"Executing Service 2","timestamp":"2015-10-20T20:50:58.229Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service2 lastServiceStatus = success","timestamp":"2015-10-20T20:50:58.229Z"}
+{"level":"info","message":"Next Service Name is = service3","timestamp":"2015-10-20T20:50:58.236Z"}
+{"level":"debug","message":"Executing Service 3","timestamp":"2015-10-20T20:50:58.238Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service3 lastServiceStatus = success","timestamp":"2015-10-20T20:50:58.238Z"}
+{"level":"info","message":"Next Service Name is = ","timestamp":"2015-10-20T20:50:58.242Z"}
+{"level":"info","message":"Workflow Name for TAX API is taxWF.","timestamp":"2015-10-20T20:51:16.646Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = firstService lastServiceStatus = success","timestamp":"2015-10-20T20:51:16.646Z"}
+{"level":"info","message":"Next Service Name is = service1","timestamp":"2015-10-20T20:51:16.669Z"}
+{"level":"debug","message":"Executing Service 1","timestamp":"2015-10-20T20:51:16.669Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service1 lastServiceStatus = success","timestamp":"2015-10-20T20:51:16.669Z"}
+{"level":"info","message":"Next Service Name is = service2","timestamp":"2015-10-20T20:51:16.678Z"}
+{"level":"debug","message":"Executing Service 2","timestamp":"2015-10-20T20:51:16.679Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service2 lastServiceStatus = success","timestamp":"2015-10-20T20:51:16.679Z"}
+{"level":"info","message":"Next Service Name is = service3","timestamp":"2015-10-20T20:51:16.690Z"}
+{"level":"debug","message":"Executing Service 3","timestamp":"2015-10-20T20:51:16.690Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service3 lastServiceStatus = success","timestamp":"2015-10-20T20:51:16.690Z"}
+{"level":"info","message":"Next Service Name is = ","timestamp":"2015-10-20T20:51:16.694Z"}
+{"level":"debug","message":"Starting reloading of rules for getWorkflowName","timestamp":"2015-10-20T20:51:27.717Z"}
+{"level":"info","message":"Deleted flow having name = wfNameFlow1","timestamp":"2015-10-20T20:51:27.717Z"}
+{"level":"info","message":"Reloaded Rules with flow name = wfNameFlow2","timestamp":"2015-10-20T20:51:27.792Z"}
+{"level":"debug","message":"Rules reloaded successfully for getWorkflowName","timestamp":"2015-10-20T20:51:27.792Z"}
+{"level":"info","message":"Workflow Name for TAX API is taxWF1.","timestamp":"2015-10-20T20:51:35.253Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF1 lastServiceName = firstService lastServiceStatus = success","timestamp":"2015-10-20T20:51:35.253Z"}
+{"level":"info","message":"Next Service Name is = ","timestamp":"2015-10-20T20:51:35.272Z"}
+{"level":"debug","message":"Starting reloading of rules for getWorkflowName","timestamp":"2015-10-20T20:51:55.764Z"}
+{"level":"info","message":"Deleted flow having name = wfNameFlow2","timestamp":"2015-10-20T20:51:55.764Z"}
+{"level":"info","message":"Reloaded Rules with flow name = wfNameFlow3","timestamp":"2015-10-20T20:51:55.830Z"}
+{"level":"debug","message":"Rules reloaded successfully for getWorkflowName","timestamp":"2015-10-20T20:51:55.830Z"}
+{"level":"info","message":"Workflow Name for TAX API is taxWF.","timestamp":"2015-10-20T20:52:04.865Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = firstService lastServiceStatus = success","timestamp":"2015-10-20T20:52:04.865Z"}
+{"level":"info","message":"Next Service Name is = service1","timestamp":"2015-10-20T20:52:04.865Z"}
+{"level":"debug","message":"Executing Service 1","timestamp":"2015-10-20T20:52:04.865Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service1 lastServiceStatus = success","timestamp":"2015-10-20T20:52:04.865Z"}
+{"level":"info","message":"Next Service Name is = service2","timestamp":"2015-10-20T20:52:04.886Z"}
+{"level":"debug","message":"Executing Service 2","timestamp":"2015-10-20T20:52:04.888Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service2 lastServiceStatus = success","timestamp":"2015-10-20T20:52:04.888Z"}
+{"level":"info","message":"Next Service Name is = service3","timestamp":"2015-10-20T20:52:04.894Z"}
+{"level":"debug","message":"Executing Service 3","timestamp":"2015-10-20T20:52:04.894Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service3 lastServiceStatus = success","timestamp":"2015-10-20T20:52:04.894Z"}
+{"level":"info","message":"Next Service Name is = ","timestamp":"2015-10-20T20:52:04.898Z"}
+{"level":"info","message":"Workflow Name for TAX API is taxWF.","timestamp":"2015-10-20T20:52:23.297Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = firstService lastServiceStatus = success","timestamp":"2015-10-20T20:52:23.297Z"}
+{"level":"info","message":"Next Service Name is = service1","timestamp":"2015-10-20T20:52:23.315Z"}
+{"level":"debug","message":"Executing Service 1","timestamp":"2015-10-20T20:52:23.315Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service1 lastServiceStatus = success","timestamp":"2015-10-20T20:52:23.315Z"}
+{"level":"info","message":"Next Service Name is = service2","timestamp":"2015-10-20T20:52:23.321Z"}
+{"level":"debug","message":"Executing Service 2","timestamp":"2015-10-20T20:52:23.321Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service2 lastServiceStatus = success","timestamp":"2015-10-20T20:52:23.321Z"}
+{"level":"info","message":"Next Service Name is = service3","timestamp":"2015-10-20T20:52:23.326Z"}
+{"level":"debug","message":"Executing Service 3","timestamp":"2015-10-20T20:52:23.326Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service3 lastServiceStatus = success","timestamp":"2015-10-20T20:52:23.326Z"}
+{"level":"info","message":"Next Service Name is = ","timestamp":"2015-10-20T20:52:23.330Z"}
+{"level":"debug","message":"Starting reloading of rules for getNextServiceName","timestamp":"2015-10-20T20:52:41.750Z"}
+{"level":"info","message":"Deleted flow having name = nextServiceFlow1","timestamp":"2015-10-20T20:52:41.750Z"}
+{"level":"info","message":"Reloaded Rules with flow name = nextServiceFlow2","timestamp":"2015-10-20T20:52:41.849Z"}
+{"level":"debug","message":"Rules reloaded successfully for getNextServiceName","timestamp":"2015-10-20T20:52:41.849Z"}
+{"level":"info","message":"Workflow Name for TAX API is taxWF.","timestamp":"2015-10-20T20:52:51.640Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = firstService lastServiceStatus = success","timestamp":"2015-10-20T20:52:51.655Z"}
+{"level":"info","message":"Next Service Name is = service1","timestamp":"2015-10-20T20:52:51.655Z"}
+{"level":"debug","message":"Executing Service 1","timestamp":"2015-10-20T20:52:51.655Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service1 lastServiceStatus = success","timestamp":"2015-10-20T20:52:51.655Z"}
+{"level":"info","message":"Next Service Name is = service2","timestamp":"2015-10-20T20:52:51.674Z"}
+{"level":"debug","message":"Executing Service 2","timestamp":"2015-10-20T20:52:51.675Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service2 lastServiceStatus = success","timestamp":"2015-10-20T20:52:51.675Z"}
+{"level":"info","message":"Next Service Name is = service4","timestamp":"2015-10-20T20:52:51.677Z"}
+{"level":"debug","message":"Executing Service 4","timestamp":"2015-10-20T20:52:51.680Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service4 lastServiceStatus = success","timestamp":"2015-10-20T20:52:51.680Z"}
+{"level":"info","message":"Next Service Name is = ","timestamp":"2015-10-20T20:52:51.682Z"}
+{"level":"debug","message":"Starting reloading of rules for getNextServiceName","timestamp":"2015-10-20T20:53:14.844Z"}
+{"level":"info","message":"Deleted flow having name = nextServiceFlow2","timestamp":"2015-10-20T20:53:14.844Z"}
+{"level":"info","message":"Reloaded Rules with flow name = nextServiceFlow3","timestamp":"2015-10-20T20:53:14.918Z"}
+{"level":"debug","message":"Rules reloaded successfully for getNextServiceName","timestamp":"2015-10-20T20:53:14.918Z"}
+{"level":"info","message":"Workflow Name for TAX API is taxWF.","timestamp":"2015-10-20T20:53:23.968Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = firstService lastServiceStatus = success","timestamp":"2015-10-20T20:53:23.968Z"}
+{"level":"info","message":"Next Service Name is = service1","timestamp":"2015-10-20T20:53:23.986Z"}
+{"level":"debug","message":"Executing Service 1","timestamp":"2015-10-20T20:53:23.987Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service1 lastServiceStatus = success","timestamp":"2015-10-20T20:53:23.987Z"}
+{"level":"info","message":"Next Service Name is = service2","timestamp":"2015-10-20T20:53:23.998Z"}
+{"level":"debug","message":"Executing Service 2","timestamp":"2015-10-20T20:53:23.998Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service2 lastServiceStatus = success","timestamp":"2015-10-20T20:53:23.998Z"}
+{"level":"info","message":"Next Service Name is = service3","timestamp":"2015-10-20T20:53:24.002Z"}
+{"level":"debug","message":"Executing Service 3","timestamp":"2015-10-20T20:53:24.002Z"}
+{"level":"debug","message":"Inside getNextService method with: workflowName = taxWF lastServiceName = service3 lastServiceStatus = success","timestamp":"2015-10-20T20:53:24.002Z"}
+{"level":"info","message":"Next Service Name is = ","timestamp":"2015-10-20T20:53:24.006Z"}

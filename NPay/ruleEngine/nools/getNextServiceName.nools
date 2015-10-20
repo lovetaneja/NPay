@@ -1,0 +1,63 @@
+define DecisionTable {
+	workflowName : '',
+	serviceName : '',
+	serviceStatus : '',
+	nextServiceName : '',
+    constructor : function(workflowName,serviceName,serviceStatus){
+        this.workflowName = workflowName;
+		this.serviceName = serviceName;
+		this.serviceStatus = serviceStatus;		
+    }
+}
+rule "001" {
+    when {
+        t : DecisionTable t.workflowName == 'taxWF';
+		t : DecisionTable t.serviceName == 'firstService';
+		t : DecisionTable t.serviceStatus == 'success';
+    }
+    then {
+		  modify(t, function(){
+			  this.nextServiceName = "service1";
+		});
+        retract(t);
+    }
+}
+rule "002" {
+    when {
+        t : DecisionTable t.workflowName == 'taxWF';
+		t : DecisionTable t.serviceName == 'service1';
+		t : DecisionTable t.serviceStatus == 'success';
+    }
+    then {
+		  modify(t, function(){
+			  this.nextServiceName = "service2";
+		});
+        retract(t);
+    }
+}
+rule "003" {
+    when {
+        t : DecisionTable t.workflowName == 'taxWF';
+		t : DecisionTable t.serviceName == 'service1';
+		t : DecisionTable t.serviceStatus == 'failure';
+    }
+    then {
+		  modify(t, function(){
+			  this.nextServiceName = "service3";
+		});
+        retract(t);
+    }
+}
+rule "004" {
+    when {
+        t : DecisionTable t.workflowName == 'taxWF';
+		t : DecisionTable t.serviceName == 'service2';
+		t : DecisionTable t.serviceStatus == 'success';
+    }
+    then {
+		  modify(t, function(){
+			  this.nextServiceName = "service3";
+		});
+        retract(t);
+    }
+}

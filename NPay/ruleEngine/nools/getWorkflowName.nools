@@ -1,0 +1,78 @@
+define API {
+	name : '',
+	workflowName : '',
+    constructor : function(apiName){
+        this.name = apiName;	
+    }
+}
+rule "001" {
+    when {
+        t : API t.name == 'TAX';
+    }
+    then {
+		  modify(t, function(){
+			  this.workflowName = "taxWF";
+		});
+        retract(t);
+    }
+}
+
+rule "002" {
+    when {
+        t : API t.name == 'AUTH';
+    }
+    then {
+		  modify(t, function(){
+			  this.workflowName = "authWF";
+		});
+        retract(t);
+    }
+}
+
+rule "003" {
+    when {
+        t : API t.name == 'SETTLE';
+    }
+    then {
+		  modify(t, function(){
+			  this.workflowName = "settleWF";
+		});
+        retract(t);
+    }
+}
+
+rule "004" {
+    when {
+        t : API t.name == 'FRAUD';
+    }
+    then {
+		  modify(t, function(){
+			  this.workflowName = "fraudWF";
+		});
+        retract(t);
+    }
+}
+
+rule "005" {
+    when {
+        t : API t.name == 'TC';
+    }
+    then {
+		  modify(t, function(){
+			  this.workflowName = "tcWF";
+		});
+        retract(t);
+    }
+}
+
+rule "006" {
+    when {
+        t : API t.name == 'REFUND';
+    }
+    then {
+		  modify(t, function(){
+			  this.workflowName = "refundWF";
+		});
+        retract(t);
+    }
+}
