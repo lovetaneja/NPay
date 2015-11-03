@@ -10,22 +10,32 @@ var logger = require('./logger.js');
 // Create a flow from nools file
 var flow = nools.compile("../ruleEngine/nools/getNextServiceName.nools", {name:"nextServiceFlow0"});
 var getNextService = function(workFlowName,serviceName,serviceStatus,callback){
-	logger.debug('Inside getNextService method with: workflowName = ' + workFlowName + ' lastServiceName = ' + serviceName + ' lastServiceStatus = ' + serviceStatus);
-	// Define DecisionTable from flow
-	var DecisonTable = flow.getDefined("DecisionTable");
-	// Create a session
-	var session = flow.getSession();
-	// Populate Decision table
-	var dt = new DecisonTable(workFlowName,serviceName,serviceStatus);
-	// Assert Session
-	session.assert(dt);
-	// Execute Rules
-	session.match().then(function(){
-		callback(null, dt.nextServiceName);		
-	});
-	logger.info('Next Service Name is = ' + dt.nextServiceName);
-	// Cleare Session
-	session.dispose();
+	try{
+		logger.debug('Inside getNextService method with: workflowName = ' + workFlowName + ' lastServiceName = ' + serviceName + ' lastServiceStatus = ' + serviceStatus);
+		// Define DecisionTable from flow
+		var DecisonTable = flow.getDefined("DecisionTable");
+		// Create a session
+		var session = flow.getSession();
+		// Populate Decision table
+		var dt = new DecisonTable(workFlowName,serviceName,serviceStatus);
+		// Assert Session
+		session.assert(dt);
+		// Execute Rules
+		session.match().then(function(err){
+			if(err){
+				callback(err);	
+			}else{
+				callback(null, dt.nextServiceName);
+			}
+		});
+		if (dt.nextServiceName!=''){
+			logger.info('Next Service Name is = ' + dt.nextServiceName);
+		}
+		// Cleare Session
+		session.dispose();
+	}catch(errorMessage){
+		callback(errorMessage);
+	}
 };
 exports.getNextService = getNextService;
 

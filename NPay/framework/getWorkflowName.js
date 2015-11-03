@@ -11,19 +11,27 @@ var logger = require('./logger.js');
 // Create a flow from nools file
 var flow = nools.compile("../ruleEngine/nools/getWorkflowName.nools", {name:"wfNameFlow0"});
 var getWorkflowName = function(apiName, callback){
-	var API = flow.getDefined("API");
-	// Create a session
-	var session = flow.getSession();	
-	var api = new API(apiName);
-	// Assert Session
-	session.assert(api);
-	// Execute Rules
-	session.match().then(function(){
-		callback(null, api.workflowName);
-	});
-	logger.info('Workflow Name for ' + apiName + ' API is ' + api.workflowName + '.');
-	// Clear Session
-	session.dispose();
+	try{
+		var API = flow.getDefined("API");
+		// Create a session
+		var session = flow.getSession();	
+		var api = new API(apiName);
+		// Assert Session
+		session.assert(api);
+		// Execute Rules	
+		session.match().then(function(err){
+			if(err){
+				callback(err);	
+			}else{
+				callback(null, api.workflowName);	
+			}
+		});
+		logger.info('Workflow Name for ' + apiName + ' API is ' + api.workflowName + '.');
+		// Clear Session
+		session.dispose();
+	}catch(errorMessage){
+		callback(errorMessage);
+	}
 };
 exports.getWorkflowName = getWorkflowName;
 
