@@ -5,6 +5,7 @@
         "express": "~4.0.0",
         "body-parser": "~1.0.1",
 		"nools": "0.4.1",
-		"winston": "1.1.1"
+		"winston": "1.1.1",
+		"validator": "4.2.1"
     }
 }

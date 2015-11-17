@@ -17,7 +17,7 @@ rule "001" {
     }
     then {
 		  modify(t, function(){
-			  this.nextServiceName = "service1";
+			  this.nextServiceName = "validateRequest";
 		});
         retract(t);
     }
@@ -25,7 +25,7 @@ rule "001" {
 rule "002" {
     when {
         t : DecisionTable t.workflowName == 'taxWF';
-		t : DecisionTable t.serviceName == 'service1';
+		t : DecisionTable t.serviceName == 'validateRequest';
 		t : DecisionTable t.serviceStatus == 'success';
     }
     then {

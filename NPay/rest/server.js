@@ -22,9 +22,10 @@ var port = process.env.PORT || 8080;
 var router = express.Router();
 
 // TAX API. URL = http://localhost:8080/api/tax
-router.get('/tax', function(req, res) {
+// Request: {"apiName":"TAX", "senderName":"Love", "senderEmail":"love.t@hcl.com"}
+router.post('/tax', function(req, res) {
 	var ew = require('../framework/executeWorkflow.js');
-	ew.executeWorkflow('TAX');
+	ew.executeWorkflow('TAX', req);
     res.json({ message: 'Welcome to TAX api!' });   
 });
 

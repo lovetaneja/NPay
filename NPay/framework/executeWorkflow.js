@@ -3,7 +3,7 @@
 This is the file to execute a given workflow. It is a 3 step process.
 */
 var logger = require('./logger.js');
-var executeWorkflow = function(workflowName){
+var executeWorkflow = function(workflowName, request){
 	// Load framework functions
 	var wf = require('../framework/getWorkflowName.js')
 	var sv = require('../framework/getNextServiceName.js')
@@ -32,7 +32,7 @@ var executeWorkflow = function(workflowName){
 			###################################################################
 			*/
 			if (service!=''){
-				es.executeService(service, executeServiceCallback);	
+				es.executeService(service, request, executeServiceCallback);	
 			}			
 		};
 		if (wfName!=''){
